@@ -69,7 +69,7 @@ class InstallCommand extends Command
             $composerJsonContents = json_decode(file_get_contents($composerJsonPath), true);
             $composerJsonStubContents = json_decode(file_get_contents(__DIR__.'/../../stubs/composer.json.stub'), true);
 
-            foreach ($composerJsonStubContents['scripts'] as $name => $script) {
+            foreach ($composerJsonStubContents['scripts'] ?? [] as $name => $script) {
                 $composerJsonContents['scripts'][$name] = array_unique(array_merge($composerJsonContents['scripts'][$name] ?? [], $script));
             }
 
