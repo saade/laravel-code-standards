@@ -24,7 +24,7 @@ $rules = [
         'spacing' => 'one',
     ],
     'ordered_imports' => [
-        'sort_algorithm' => 'length',
+        'sort_algorithm' => 'alpha',
     ],
     'single_import_per_statement' => false,
     'group_import' => true,
