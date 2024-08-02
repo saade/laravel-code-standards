@@ -1,6 +1,7 @@
 <?php
 
-use PhpCsFixer\{Config, Finder};
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
 
 $rules = [
     '@PSR12' => true,
@@ -26,7 +27,8 @@ $rules = [
     'ordered_imports' => [
         'sort_algorithm' => 'alpha',
     ],
-    'single_import_per_statement' => false,
+    'single_import_per_statement' => true,
+    'group_import' => false,
     'single_quote' => true,
     'lowercase_cast' => true,
     'lowercase_static_reference' => true,
