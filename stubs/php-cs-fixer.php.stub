@@ -27,7 +27,6 @@ $rules = [
         'sort_algorithm' => 'alpha',
     ],
     'single_import_per_statement' => false,
-    'group_import' => true,
     'single_quote' => true,
     'lowercase_cast' => true,
     'lowercase_static_reference' => true,
